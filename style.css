@@ -1,0 +1,22 @@
+:root {
+    --color-green: #50fa7b;
+    --color-menu-hover: #50fa7b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: rgb(11, 10, 13);
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  header {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  img {
+    max-width: 100%;
+  }

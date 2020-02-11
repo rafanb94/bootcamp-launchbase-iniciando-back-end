@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfólio | Rafael Brunner</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      header .menu {
+        display: flex;
+        justify-content: center;
+      }
+      header .menu li {
+        list-style: none;
+      }
+      header .menu li a {
+        padding: 20px 10px;
+        margin: 0px 15px;
+        color: #fff;
+        font-size: 2em;
+        text-decoration: none;
+      }
+      header .menu li a:hover {
+        color: var(--color-menu-hover);
+        border-bottom: var(--color-green) 1px solid;
+        transition: all 250ms ease-in-out;
+      }
+      main div.container {
+        color: #fff;
+        text-align: center;
+        padding: 32px;
+      }
+      main div.container img {
+        border-radius: 50%;
+        border: 5px solid var(--color-green);
+        margin: 0px 0px 32px 0px;
+      }
+      main div.container h1,
+      h2 {
+        line-height: 1.5em;
+        font-weight: normal;
+      }
+      main .links {
+        display: flex;
+        justify-content: center;
+      }
+      main .links li {
+        list-style: none;
+      }
+      main .links li a {
+        padding: 20px 10px;
+        margin: 0px 15px;
+        color: #fff;
+        font-size: 1em;
+        color: var(--color-green);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/aulas.html">Aulas</a></li>
+        <li><a href="/cursos.html">Cursos</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <img
+          src="https://scontent.fcgh10-1.fna.fbcdn.net/v/t1.0-1/p160x160/59407476_2184049961702192_6987893004405047296_o.jpg?_nc_cat=108&_nc_ohc=HpQMBOJ28c4AX9BEA-V&_nc_ht=scontent.fcgh10-1.fna&_nc_tp=6&oh=98f9a763de8e57793a88656b05d533f2&oe=5EC7944C"
+          alt="foto de perfil"
+        />
+        <h1>Portófilo Profissional | Rafael Brunner</h1>
+        <h2>Formação em Análise e Desenvolvimento de Sistemas</h2>
+        <h2>Consultor SEO por SEO Unlocked</h2>
+      </div>
+      <footer>
+        <ul class="links">
+          <li><a href="/">Linkedin</a></li>
+          <li><a href="/">Github</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>

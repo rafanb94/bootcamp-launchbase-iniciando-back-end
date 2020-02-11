@@ -1,0 +1,132 @@
+.cards__container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 650px;
+  }
+  .cards__bg {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+  }
+  
+  #starter.cards__bg:hover{
+      border: 2px solid rgb(113, 89, 193);
+      transition: all 100ms ease-in-out;
+      margin: -10px;
+  }
+  
+  #launchbase.cards__bg:hover{
+      border: 2px solid rgb(253, 149, 31);
+      transition: all 100ms ease-in-out;
+      margin: -10px;
+  }
+  
+  #gostack.cards__bg:hover{
+      border: 2px solid rgb(4, 211, 97);
+      transition: all 100ms ease-in-out;
+      margin: -10px;
+  }
+  
+  section .cards__header {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+  }
+  
+  #starter .cards__header h2 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: rgb(113, 89, 193);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(113, 89, 193);
+    border-image: initial;
+  }
+  
+  #launchbase .cards__header h2 {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      color: rgb(253, 149, 31);
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 50%;
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgb(253, 149, 31);
+      border-image: initial;
+    }
+  
+    #gostack .cards__header h2 {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      color: rgb(4, 211, 97);
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 50%;
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgb(4, 211, 97);
+      border-image: initial;
+    }
+  
+  .cards__image-container img {
+    max-width: 100%;
+    margin: 50px auto;
+    display: block;
+  }
+  
+  .cards__content {
+    color: #fff;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+  }
+  .cards__content p {
+    max-width: 270px;
+  }
+  .cards__button {
+    padding: 10px 20px;
+    margin: 50px auto;
+    display: block;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.4);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.75em;
+  }
+  
+  .starter__strong {
+    color: rgb(113, 89, 193);
+  }
+  
+  .launchbase__strong {
+      color: rgb(253, 149, 31);
+  }
+  .gostack__strong{
+      color:rgb(4, 211, 97);
+  }

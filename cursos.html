@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfólio | Rafael Brunner</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cursos.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <style>
+      header .menu {
+        display: flex;
+        justify-content: center;
+      }
+      header .menu li {
+        list-style: none;
+      }
+      header .menu li a {
+        padding: 20px 10px;
+        margin: 0px 15px;
+        color: #fff;
+        font-size: 2em;
+        text-decoration: none;
+      }
+      header .menu li a:hover {
+        color: var(--color-menu-hover);
+        border-bottom: var(--color-green) 1px solid;
+        transition: all 250ms ease-in-out;
+      }
+      .title {
+        color: #fff;
+        text-align: center;
+        padding: 10px 10px 0px 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/aulas.html">Aulas</a></li>
+        <li><a href="/cursos.html">Cursos</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="title">
+        <h1>Cursos Disponíveis</h1>
+      </div>
+      <section class="cards__container">
+        <div class="cards__bg" id="starter">
+          <header class="cards__header">
+            <h2><span>01</span></h2>
+          </header>
+          <div class="cards__image-container">
+            <img
+              src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg"
+              alt="site itxmidia trabalho 01"
+            />
+          </div>
+          <div class="cards__content">
+            <p>
+              <strong
+                ><span class="starter__strong"
+                  >Torne-se um programador desejado</span
+                ></strong
+              >
+              no mercado com esses cursos gratuitos
+            </p>
+          </div>
+          <button class="cards__button">Saiba Mais</button>
+        </div>
+
+        <div class="cards__bg" id="launchbase">
+          <header class="cards__header">
+            <h2><span>02</span></h2>
+          </header>
+          <div class="cards__image-container">
+            <img
+              src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg"
+              alt="site itxmidia trabalho 01"
+            />
+          </div>
+          <div class="cards__content">
+            <p>
+              <strong
+                ><span class="launchbase__strong"
+                  >Domine programação do zero</span
+                ></strong
+              >
+              e tenha acesso às melhores oportunidades do mercado
+            </p>
+          </div>
+          <button class="cards__button">Saiba Mais</button>
+        </div>
+        <div class="cards__bg" id="gostack">
+          <header class="cards__header">
+            <h2><span>03</span></h2>
+          </header>
+          <div class="cards__image-container">
+            <img
+              src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg"
+              alt="site itxmidia trabalho 01"
+            />
+          </div>
+          <div class="cards__content">
+            <p>
+              <strong
+                ><span class="gostack__strong"
+                  >Treinamento imersivo</span
+                ></strong
+              >
+              nas tecnologias mais modernas de desenvolvimento web e mobile
+            </p>
+          </div>
+          <button class="cards__button">Saiba Mais</button>
+        </div>
+      </section>
+      <div class="modal-overlay">
+        <div class="modal">
+          <a class="close-modal">
+            <i class="material-icons">close</i>
+          </a>
+
+          <a class="fullsize-modal">
+            <i class="">[ ]</i>
+          </a>
+          <div class="modal-content">
+            <iframe
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
