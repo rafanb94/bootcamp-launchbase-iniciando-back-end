@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfólio | Rafael Brunner</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="cursos.css" />
-    <link rel="stylesheet" href="modal.css" />
-    <style>
-      header .menu {
-        display: flex;
-        justify-content: center;
-      }
-      header .menu li {
-        list-style: none;
-      }
-      header .menu li a {
-        padding: 20px 10px;
-        margin: 0px 15px;
-        color: #fff;
-        font-size: 2em;
-        text-decoration: none;
-      }
-      header .menu li a:hover {
-        color: var(--color-menu-hover);
-        border-bottom: var(--color-green) 1px solid;
-        transition: all 250ms ease-in-out;
-      }
-      .title {
-        color: #fff;
-        text-align: center;
-        padding: 10px 10px 0px 10px;
-        margin-top: 10px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <ul class="menu">
-        <li><a href="/">Sobre</a></li>
-        <li><a href="/aulas.html">Aulas</a></li>
-        <li><a href="/cursos.html">Cursos</a></li>
-      </ul>
-    </header>
-    <main>
+{% extends "template.html" %}
+{% block content %}
+<main>
       <div class="title">
         <h1>Cursos Disponíveis</h1>
       </div>
@@ -145,6 +92,5 @@
       </div>
       <footer></footer>
     </main>
-    <script src="scripts.js"></script>
-  </body>
-</html>
+    {% endblock %}  
+  
