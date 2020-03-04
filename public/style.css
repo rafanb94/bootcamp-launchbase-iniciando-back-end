@@ -20,3 +20,52 @@
   img {
     max-width: 100%;
   }
+
+  header .menu {
+    display: flex;
+    justify-content: center;
+  }
+  header .menu li {
+    list-style: none;
+  }
+  header .menu li a {
+    padding: 20px 10px;
+    margin: 0px 15px;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  header .menu li a:hover {
+    color: var(--color-menu-hover);
+    border-bottom: var(--color-green) 1px solid;
+    transition: all 250ms ease-in-out;
+  }
+  main div.container {
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+  }
+  main div.container img {
+    border-radius: 50%;
+    border: 5px solid var(--color-green);
+    margin: 0px 0px 32px 0px;
+  }
+  main div.container h1,
+  h2 {
+    line-height: 1.5em;
+    font-weight: normal;
+  }
+  main .links {
+    display: flex;
+    justify-content: center;
+  }
+  main .links li {
+    list-style: none;
+  }
+  main .links li a {
+    padding: 20px 10px;
+    margin: 0px 15px;
+    color: #fff;
+    font-size: 1em;
+    color: var(--color-green);
+  }
