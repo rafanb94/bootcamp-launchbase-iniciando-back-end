@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  {% block head %}
+  <title> Site - Rafael Brunner </title>
+  {% endblock %}
+  </head>
+
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/aulas">Aulas</a></li>
+        <li><a href="/cursos">Cursos</a></li>
+      </ul>
+    </header>
+
+     {% block content %}
+     {% endblock %}
+  </body>
+</html>

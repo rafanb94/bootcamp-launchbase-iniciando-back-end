@@ -1,6 +1,13 @@
 {% extends "template.html" %}
-{% block content %}
+{% block head %}
+    <title>Portfólio | Rafael Brunner</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/aulas.css" />
+<link rel="stylesheet" href="/modal.css" />
+<link rel="stylesheet" href="/style.css" />
+{% endblock %}
+
+{% block content %}
 <main>
       <div class="title">
         <h1>Projetos</h1>
@@ -68,4 +75,5 @@
       </div>
       <footer></footer>
     </main>
+    <script src="/scripts.js"></script>
    {% endblock %}
