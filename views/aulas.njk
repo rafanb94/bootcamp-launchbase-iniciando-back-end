@@ -18,7 +18,7 @@
           <header class="cards__header">
             <h2>Projetos 01 | Rafael Brunner</h2>
           </header>
-          <div class="cards__image-container">
+          <div class="cards__image-container {{'featured-wrapper' if item.featured}}">
             <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de{{item.title}}"/>
             {% if item.featured %}
             <div class="featured">Featured</div>
@@ -30,7 +30,6 @@
           <button class="cards__button">Saiba Mais</button>
         </div>
       {% endfor %}
-
 
     </section>
     <div class="modal-overlay">
