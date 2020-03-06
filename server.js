@@ -32,18 +32,19 @@ server.get("/aulas", function (request, response) {
 server.get("/cursos", function (request, response) {
     return response.render("cursos");
 });
-server.get("/video", function (request, response){
+server.get("/video", function (request, response) {
     const id = request.query.id
-    const video = videos.find(function(video){
+    const video = videos.find(function (video){
         if (video.id == id) {
             return true
-        }
+            }
     })
-    if (!video.id == id) {
-        return response.send("Video not found!")
-    }
-    return response.render("video", {video})
-})
+        if (!video){
+            return response.send("Video not found!")
+        }
+        return response.render ("video", { item: video })
+    })
+
 
 //endRoutes
 server.listen(5000, function () { });

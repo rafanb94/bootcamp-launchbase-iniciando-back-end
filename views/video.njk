@@ -1,0 +1,31 @@
+{% extends "template.njk" %}
+{% block head %}
+  <title>{{item.title}}| Rafael Brunner</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/video.css"/>
+  <link rel="stylesheet" href="/style.css"/>
+{% endblock %}
+
+{% block content %}
+  <main>
+    <div class="title">
+      <h1>Aulas</h1>
+    </div>
+    <section class="video">
+        <div class="cards__bg" id="{{item.id}}">
+          <header class="cards__header">
+            <h2>{{item.title}} | Rafael Brunner</h2>
+          </header>
+          <div class="cards__video-container">
+            <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
+          </div>
+          <div class="cards__content">
+            <p>{{item.title}}</p>
+          </div>
+          <button class="cards__button">Saiba Mais</button>
+        </div>
+    </section>
+    <footer></footer>
+  </main>
+ <script src="/scripts.js"></script>
+{% endblock %}
